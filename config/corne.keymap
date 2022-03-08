@@ -32,9 +32,9 @@
     lower_layer {
 
       bindings = <
-&kp GRV &kp EXLM &kp AT   &kp HASH &kp DLR  &kp PERC                                     &kp ASTR &kp 7    &kp 8    &kp 9    &kp PPLS   _______
-_______ &kp CIRC &kp AMPR &kp UNDS &kp LBRC &kp RBRC                                     &kp SLSH &kp 4    &kp 5    &kp 6    &kp MINS   _______
-_______ &kp SCLN &kp LT   &kp GT   &kp LCBR &kp RCBR                                     &kp 0    &kp 1    &kp 2    &kp 3    &kp PEQL   _______
+&kp GRV &kp EXLM &kp AT   &kp HASH &kp DLLR  &kp PRCNT                                     &kp ASTR  &kp N7    &kp N8    &kp N9    &kp KP_PLUS   _______
+_______ &kp CARET &kp AMPS &kp UNDER &kp LBCT &kp RBCT                                     &kp SLSH  &kp N4    &kp N5    &kp N6    &kp KP_MINUS  _______
+_______ &kp SEMI &kp LT   &kp GT   &kp LBRC &kp RBRC                                     &kp N0    &kp N1    &kp N2    &kp N3    &kp KP_EQUAL  _______
                                 _______ _______ _______                  _______   &mo L_ADJUST _______
       >;
     };
