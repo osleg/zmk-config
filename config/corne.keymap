@@ -12,19 +12,19 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define L_BASE 0
-#define L_LOWER 1
-#define L_RAISE 2
-#define L_ADJUST 3
-#define L_DVORAK 4
+#define L_DVORAK 1
+#define L_LOWER 2
+#define L_RAISE 3
+#define L_ADJUST 4
 
 #define _______ &trans
 
+&lt {
+  tapping-term-ms = <150>;
+  quick-tap-ms = <200>;
+};
+
 / {
-  behaviors {
-    &lt {
-      quick-tap-ms = <150>;
-    };
-  };
   keymap {
     compatible = "zmk,keymap";
     default_layer {
@@ -33,6 +33,15 @@
 &kp LCTRL         &kp A    &kp S    &kp D    &kp F    &kp G                                     &kp H    &kp J    &kp K     &kp L    &kp SEMI &kp APOS
 &mt LSHIFT LPAR   &kp Z    &kp X    &kp C    &kp V    &kp B                                     &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH &mt RSHIFT RPAR
                                 &kp LGUI &lt L_LOWER TAB &kp SPC         &kp BSPC &lt L_RAISE ENTER &kp RALT
+      >;
+    };
+    dvorak_layer {
+      bindings = <
+
+_______ &kp APOS    &kp COMMA &kp DOT    &kp P    &kp Y                                     &kp F    &kp G    &kp C    &kp R    &kp L _______
+_______ &kp A       &kp O     &kp E      &kp U    &kp I                                     &kp D    &kp H    &kp T    &kp N    &kp S &kp FSLH
+_______ &kp SEMI    &kp Q     &kp J      &kp K    &kp X                                     &kp B    &kp M    &kp W    &kp V    &kp Z _______
+                                _______ _______ _______         _______ _______ _______
       >;
     };
     lower_layer {
@@ -59,15 +68,6 @@ _______ _______ _______ _______ _______ _______                                 
 &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI    &rgb_ug RGB_SPI &bt BT_CLR                                 &none   &none        &none      &none        &kp K_MUTE     &kp CAPS
 &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD    &rgb_ug RGB_SPD _______                                    &none   &kp K_PREV   &kp K_PP   &kp K_NEXT   &kp K_VOL_DN   &kp SLCK
                                                   &kp LGUI _______  &kp SPC                                           &kp ENTER _______ &kp RALT
-      >;
-    };
-    dvorak_layer {
-      bindings = <
-
-&kp ESC         &kp APOS    &kp COMMA &kp DOT    &kp P    &kp Y                                     &kp F    &kp G    &kp C    &kp R    &kp L &kp BSLH
-&kp LCTRL       &kp A       &kp O     &kp E      &kp U    &kp I                                     &kp D    &kp H    &kp T    &kp N    &kp S &kp FSLH
-&mt LSHIFT LPAR &kp SEMI    &kp Q     &kp J      &kp K    &kp X                                     &kp B    &kp M    &kp W    &kp V    &kp Z &mt RSHIFT RPAR
-                                &kp LGUI &lt L_LOWER TAB &kp SPC         &kp BSPC &lt L_RAISE ENTER &kp LALT
       >;
     };
   };
