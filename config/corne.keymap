@@ -24,6 +24,10 @@
   quick-tap-ms = <200>;
 };
 
+&caps_word {
+  continue_list = <UNDERSCORE BACKSPACE>;
+};
+
 / {
   keymap {
     compatible = "zmk,keymap";
