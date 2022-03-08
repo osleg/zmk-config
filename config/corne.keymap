@@ -20,6 +20,11 @@
 #define _______ &trans
 
 / {
+  behaviors {
+    &lt {
+      quick-tap-ms = <150>;
+    };
+  };
   keymap {
     compatible = "zmk,keymap";
     default_layer {
