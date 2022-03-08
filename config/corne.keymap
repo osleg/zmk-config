@@ -20,7 +20,7 @@
 
 / {
   keymap {
-    compatible = "zmk keymap";
+    compatible = "zmk,keymap";
     default_layer {
       bindings = <
 &kp ESC           &kp Q    &kp W    &kp E    &kp R    &kp T                                     &kp Y    &kp U    &kp I     &kp O    &kp P    &kp BSLH
