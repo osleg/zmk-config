@@ -26,9 +26,9 @@
       timeout-ms = <0>;
       key-postions = <24 35>;
       bindings = <&caps_word>;
-    }
-  }
-}
+    };
+  };
+};
 
 &lt {
   tapping-term-ms = <150>;
