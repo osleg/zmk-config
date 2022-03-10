@@ -23,7 +23,6 @@
   combos {
     compatible = "zmk,combos";
     combo_cw {
-      timeout-ms = <-1>;
       key-positions = <24 35>;
       bindings = <&caps_word>;
     };
