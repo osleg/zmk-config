@@ -117,6 +117,9 @@ _______ _______ _______ _______ _______ _______                                 
       chain-length = <27>; /* arbitrary; change at will */
       spi-one-frame = <0x70>;
       spi-zero-frame = <0x40>;
+      color-mapping = <LED_COLOR_ID_GREEN
+                       LED_COLOR_ID_RED
+                       LED_COLOR_ID_BLUE>;
    };
 };
 
