@@ -72,8 +72,8 @@ _______ &kp SEMI &kp LT   &kp GT   &kp LBRC &kp RBRC                            
     raise_layer {
       label = "RAISE";
       bindings = <
-_______ _______ _______ _______ _______ _______                                  _______ _______ _______ _______ _______   &kp PG_UP
-_______ _______ _______ _______ _______ _______                                 &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp HOME &kp END
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                   _______ _______ _______ _______ _______   &kp PG_UP
+&kp F7  &kp F8  &kp F9  &kp F10 &kp F11 &kp F12                                  &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp HOME &kp END
 _______ _______ _______ _______ _______ _______                                  _______ _______ _______ _______ _______   &kp PG_DN
                                 _______   &mo L_ADJUST _______           _______ _______ _______
       >;
